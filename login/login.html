@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website with login and registration</title>
+  <link rel="stylesheet"href="login.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form id="loginForm" action="#" autocomplete="off" onsubmit="return redirectToHome(event)">
+        <label>Email</label>
+        <div class="input-box">
+          <span class="icon"></span>
+          <input type="email"required>
+        </div>
+        <label>password</label>
+        <div class="input-box">
+          <input type="password"id="passInput"required>
+        </div>
+        <div class="remeber-forgot">
+          <label><input type="checkbox">Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+          <button class="btn"value="submit">Login</button>
+        <div class="login-register">  
+             <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+        </div>
+      </form>
+    </div>
+    
+  <div class="form-box registration">
+    <h2>Registration</h2>
+    <form id="loginForm" action="#" autocomplete="off" onsubmit="return redirectToHome(event)">
+      <label>Full Name</label>
+      <div class="input-box">
+        <span class="icon"></span >
+        <input type="text"required>
+      </div>
+      <label>Email</label>
+      <div class="input-box">
+        <span class="icon"></span >
+        <input type="email"required>
+      </div>
+      <label>password</label>
+      <div class="input-box">
+        <input type="password"id="passInput"required>
+      </div>
+      <div class="remeber-forgot">
+        <label><input type="checkbox"required>I agree to the term & condition</label>
+      </div>
+        <button class="btn"value="submit">Register</button>
+      <div class="login-register">  
+           <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+      </div>
+    </form>
+  </div>
+  </div> 
+ 
+  
+
+  <script src="login.js"></script>
+</body>
+</html>

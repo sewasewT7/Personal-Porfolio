@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding:20px 100px ;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background: url('R.jpg');
+  background-position: center;
+
+}
+h2{
+  font-size:30px;
+  text-align: center;
+  font-weight:bold;
+  color: rgb(240, 233, 233);
+  padding: 30px;
+}
+form label{ 
+  font-family: serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.input-box input{
+  align-items: center;
+  width: 100%;
+  height: 60%;
+  padding-top:10px;
+}
+.remeber-forgot{
+  font-size: .9em;
+  color: #e1e6e9;
+  font-weight: 500;
+  display: inline-block;
+  justify-content: space-between;
+  margin: 15px 0 20px;
+}
+.remeber-forgot label input{
+  accent-color: #f4f9fd;
+  margin-right: 3px;
+}
+.remeber-forgot a{
+  color: rgb(194, 219, 219);
+  font-size:12px;
+}
+.remeber-forgot a:hover{
+  color: red;
+  transition: 0.5s;
+}
+#loginForm label{
+  color: aqua;
+
+}
+.login-register{
+  color: beige;
+  margin-top: 30px;
+}
+.login-register a{
+  color: aqua;
+  font-size: 12px;
+}
+.login-register a:hover{
+  color: red;
+  transition: 0.5s;
+ 
+}
+.wrapper{
+  position: relative;
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255,.5 );
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(211, 209, 209, 0.5);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: height .2s ease;
+}
+
+.wrapper .form-box.registration{
+  position: absolute;
+  transform: translateX(400px);
+}
+.wrapper.active{
+  height: 520px;
+
+}
+.wrapper .form-box{
+  width: 100%;
+  padding: 40px;
+}
+.wrapper .form-box.login{
+  transition:transform .18s ease;
+  transform: translateX(0);
+}
+.wrapper.active .form-box.login{
+  transition: none;
+  transform: translateX(-400px);
+}
+.wrapper .form-box.form-box.registration{
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+.wrapper.active .form-box.form-box.registration{
+  transition:transform .18s ease;
+  transform: translateX(0);
+}
+.btn{
+  margin-top: 10px;
+  width: 100%;
+  height: 45px;
+  background-color:#3f5e75;
+  border: none;
+  outline: none;
+  border-radius:15px;
+  cursor: pointer;
+  font-size: 1em;
+  color: white;
+}
+.btn:hover .stars{
+  display: block;
+  filter: drop-shadow(0 0 10px #7fb6e3;
+
+}
+
+p {
+  text-align: center;
+}
+
+p a {
+  color: #b0d1ea;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
